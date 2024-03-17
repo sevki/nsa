@@ -3,9 +3,18 @@ name = "nosey_syscall_auditor"
 version = "0.1.0"
 edition = "2021"
 
+# build = "build.rs"
+
 [lib]
 name = "nsa"
 crate-type = ["cdylib"]
 
 [dependencies]
+bindgen = "0.69.4"
 libc = "0.2.153"
+
+[dev-dependencies]
+bindgen = "0.69.4"
+
+[build-dependencies]
+bindgen = "0.64"
