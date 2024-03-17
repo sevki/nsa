@@ -1,10 +1,13 @@
-<img src="docs/src/okRust.png" width="200" height="200" alt="okRust logo">
+<img src="nsa.png" width="200" height="200" alt="Nosey Syscall Auditor">
 
-# okRust
+# Nosey Syscall Auditor
 
-okrust is the template for new rust projects within oknotok.computer.
+NSA, a tortured backronym for Nosey Syscall Auditor, is a simple tool to audit system calls made by a process. 
 
-It has some opinionated defaults, like using:
-- mdBook for documentation
-- release please for releases
-- github actions for CI/CD
+I'm sorry. I couldn't resist.
+
+## Usage
+
+```bash
+LD_PRELOAD=./nsa.so make all
+```
