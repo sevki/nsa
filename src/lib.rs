@@ -1,6 +1,6 @@
 //!  ![NSA](https://raw.githubusercontent.com/sevki/nsa/master/nsa.png)
 //!
-//! # NSA: Nosey Syscall Abstractions
+//! # NSA: Naughty Syscall Abstractions
 //!  
 //! NSA is a library that allows you to intercept and log system calls.
 //! It uses the `dlsym` function to get the address of the original function and then calls it. This is a simple way to intercept and log system calls.

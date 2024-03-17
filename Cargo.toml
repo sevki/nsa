@@ -1,7 +1,10 @@
 [package]
-name = "nosey_syscall_auditor"
+name = "naughty_syscall_auditor"
 version = "0.1.0"
 edition = "2021"
+description = "He's not the messiah, he's a very naughty syscall auditor"
+
+# build = "build.rs"
 
 # build = "build.rs"
 

@@ -1,4 +1,4 @@
-<img src="nsa.png" width="200" height="200" alt="Nosey Syscall Auditor">
+<img src="nsa.png" width="200" height="200" alt="Naughty Syscall Auditor">
 
 # Naughty Syscall Auditor
 
