@@ -9,7 +9,7 @@
 //!
 //! ```shell
 //! cargo build --release  
-//! LD_PRELOAD=./target/release/nsa.so make
+//! LD_PRELOAD=./target/release/libnsa.so make
 //! ```
 
 // set docs rs logo and favicon
@@ -22,9 +22,9 @@ use std::ffi::CStr;
 macro_rules! wrap_syscall {
     ($func_name:ident, $($arg_name:ident: $arg_type:ty),*) => {
         /// # Safety
-        /// 
+        ///
         /// These functinos are inherently unsafe as they are calling system calls.
-        /// 
+        ///
         #[no_mangle]
         pub unsafe extern "C" fn $func_name($($arg_name: $arg_type),*) -> i32 {
             let orig_func: unsafe extern "C" fn($($arg_type),*) -> i32 =
@@ -54,8 +54,11 @@ macro_rules! wrap_syscall {
             result
         }
     };
-
     ($func_name:ident) => {
+        /// # Safety
+        ///
+        /// These functinos are inherently unsafe as they are calling system calls.
+        ///
         #[no_mangle]
         pub unsafe extern "C" fn $func_name() -> i32 {
             let orig_func: unsafe extern "C" fn() -> i32 =

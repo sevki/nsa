@@ -1,13 +1,11 @@
 <img src="nsa.png" width="200" height="200" alt="Nosey Syscall Auditor">
 
-# Nosey Syscall Auditor
+# Naughty Syscall Auditor
 
-NSA, a tortured backronym for Nosey Syscall Auditor, is a simple tool to audit system calls made by a process. 
-
-I'm sorry. I couldn't resist.
+NSA is not the messiah, he's a very naughty syscall auditor. Now go away.
 
 ## Usage
 
 ```bash
-LD_PRELOAD=./nsa.so make all
+LD_PRELOAD=./libnsa.so make all
 ```
