@@ -14,7 +14,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 bindgen = "0.69.4"
-libc = "0.2.155"
+libc = "0.2.157"
 
 [dev-dependencies]
 bindgen = "0.69.4"
